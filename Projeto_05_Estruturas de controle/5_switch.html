@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Estruturas de Controle</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <script>
+            var dia = new Date();
+            //var hoje = 3;//dia.getDay();
+            switch( dia.getDay())
+            {
+                case 0:
+                    alert("Domingo");
+                    break;
+                case 1:
+                       alert("Segunda-Feira");
+                       break;
+                 case 2:
+                       alert("Terça-Feira");
+                       break;
+                 case 3:
+                       alert("Quarta-Feira");
+                       break;
+                 case 4:
+                       alert("Quinta-Feira");
+                       break;
+                 case 5:
+                       alert("Sexta-Feira");
+                       break;
+                 case 6:
+                       alert("Sabado");
+                       break; 
+                   default:
+                       alert("Valor Inválido");
+            }
+            
+            console.log(dia.getDay());
+        </script>
+    </head>
+  
+    <body>
+        <hr>
+    </body>
+</html>

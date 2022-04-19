@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script type="text/javascript" language="javascript">
+/*
+AJAX - ASYNCHRONUS JAVASCRIPT AND XML
+
+OBJETO - XMLHttpRequest
+
+Carregamento de conteudos c/ JavaScript - xml, txt, json, html, JavaScript
+
+Criado pela Microsoft - em 2006 w3c transformou em recomendacao oficial
+
+sincrona - uma acao que eu disparo e espero o retorno dela para fazer outra coisa
+
+Assincrono - disparo um link e continuo navegando na pagina, executando outras acoes
+*/
+window.onload = function(){
+		document.getElementById("lista").onclick = function(){
+			var resp = document.getElementById("resposta");
+				//alert(resp.innerHTML);	
+				//implementacao do ajax
+				//criar o objeto XMLHttpRequest
+				//atraves dele faremos todas as nossas requisicoes
+				var carregaLista = new XMLHttpRequest();
+				
+				//propriedade do obj XMLHttpRequest - pega um tipo de resposta do servidor - uma alteracao de status na comunicacao cliente servidor
+				carregaLista.onreadystatechange=function()
+                                                                    {
+					
+						/*
+						ajax.readyState
+						0 - comunicacao nao iniciada
+						1 - inicio de comunicacao
+						2 - inicio de requisicao - algo foi encaminhado para o servidor
+						3 - servidor em processo de envio de resposta
+						4 - servidor acabou de enviar a resposta da requisicao
+						*/
+						if(carregaLista.readyState == 4){
+							//alert("requisiçao chegou");
+                                                                                                                        //alert(carregaLista.status);
+							//alert(carregaLista.statusText);
+							//alert(carregaLista.responseText);
+							resp.innerHTML = carregaLista.responseText;
+							//resp.innerHTML+= carregaLista.responseText;
+                                                                                                        }	
+				}
+				
+				
+				////////////////////////////////////////////////////////////////////////////////
+				//indica aoajax quais os dados de endereco de afrquivoque ele acessará no servidor
+				//dois parametros obrigatorios - metodo(GET e POST sao os mais populares) e url(valor relativo ou absoluto - no mesmoservidor)
+				//tres parametros opcionais - assincronia(padrao true) - usuario e senha
+				
+				carregaLista.open("POST","lista.html",true);
+                                                                    carregaLista.send(null);// carregaLista.send(nome="edu"&idade=47);
+				//respostas
+				//status - numero - 200 se ok - 404 nao encontrada
+				
+				
+				//status em formato de texto
+				//alert(carregaLista.statusText);
+				
+				//responseText = para carregamento de conteudo texto
+				//alert(carregaLista.responseText);
+				
+				//responseXML= para carregamento de conteudo xml
+				//alert(carregaLista.responseXML);
+				
+		}
+                                  document.getElementById("combo").onclick = function(){
+			var resp = document.getElementById("resposta");
+				var carregaCombo = new XMLHttpRequest();
+				
+				//propriedade do obj XMLHttpRequest - pega um tipo de resposta do servidor - uma alteracao de status na comunicacao cliente servidor
+				carregaCombo.onreadystatechange=function()
+                                                                    {
+						if(carregaCombo.readyState == 4){
+							resp.innerHTML = carregaCombo.responseText;
+                                                                                                        }	
+				}
+				
+				
+				carregaCombo.open("POST","select.html",true);
+                                                                    carregaCombo.send(null);// carregaLista.send(nome="edu"&idade=47);
+		}
+}
+</script>
+</head>
+
+<body>
+<div>
+  <input type="button" name="botao" id="lista" value="Carregar Lista">
+
+  <input type="button" name="botao" id="combo" value="Carregar Select">
+</div>
+    <hr>
+<div id="resposta">Conteudo que será trocado!!!</div>
+</body>
+</html>

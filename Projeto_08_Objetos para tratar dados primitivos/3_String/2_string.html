@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <script>
+            window.onload=function(){
+	
+	document.getElementById('txt_cnpj').onkeypress = function(){
+		if(this.value.length==2) this.value =  this.value.concat(".");
+                                    if(this.value.length==6) this.value =  this.value.concat(".");
+                                    if(this.value.length==10) this.value =  this.value.concat("/";
+                                    if(this.value.length==15) this.value =  this.value.concat("-");
+                                     if(this.value.length==18) return false;
+	}
+            }
+           
+        </script>
+    </head>
+    <body>
+       <p><input type="text" name="txt_cnpj" id="txt_cnpj" />00.000.000/0000-00</p>
+    </body>
+</html>

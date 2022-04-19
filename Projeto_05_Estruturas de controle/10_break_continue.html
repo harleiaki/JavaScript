@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            table{
+                width: 50%;
+                border: 1px solid #000;
+            }
+            
+        </style>
+        <script>
+                var parar = 30;//1 ate 49
+                var cont = 1;
+                while(cont <= 50){
+                   document.write(cont + ", ");
+                   if(parar == cont){
+                       break;
+                   }
+                   cont++;
+                }
+                document.write("<hr>");
+               ///////////////////////////////////////////////////////////////////////////////////////// 
+               var pular = 30;//1 ate 49
+                var cont = 1;
+                while(cont <= 50){
+                   if(pular == cont){
+                       cont++;
+                       continue;
+                   }
+                   document.write(cont + ", ");
+                   cont++;
+                }
+        </script>
+    </head>
+    <body>
+        <hr>
+    </body>
+</html>

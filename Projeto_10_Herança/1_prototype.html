@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            //prototype
+           
+            
+            Date.prototype.diasSemana = ['Dom','Seg','Ter','Qua','Qui','Sex','Sab'];
+            Date.prototype.hoje = function(){
+                    return this.diasSemana[this.getDay()];
+            } 
+    
+            var agora = new Date();
+             alert(agora.hoje());
+             
+        </script>
+    </head>
+    <body>
+       
+    </body>
+</html>

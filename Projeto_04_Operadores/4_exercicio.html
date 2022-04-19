@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Operadores Aritiméticos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script async="async">
+        window.onload = function()
+        {   
+            var num1 = document.getElementById('num1');
+            var num2 = document.getElementById('num2');
+            
+            document.getElementById('adicao').onclick = function()
+            {
+                var operacao = parseFloat(num1.value) + parseFloat(num2.value);
+                document.getElementById("resultado").innerHTML = "Resultado da operação: "  + operacao;
+            }
+            document.getElementById('subtrair').onclick = function()
+            {
+                var operacao = parseFloat(num1.value) - parseFloat(num2.value);
+                document.getElementById("resultado").innerHTML = "Resultado da operação: "  + operacao;
+            }
+             document.getElementById('multiplicar').onclick = function()
+            {
+                var operacao = parseFloat(num1.value) * parseFloat(num2.value);
+                document.getElementById("resultado").innerHTML = "Resultado da operação: "  + operacao;
+            }
+             document.getElementById('dividir').onclick = function()
+            {
+                var operacao = parseFloat(num1.value) / parseFloat(num2.value);
+                document.getElementById("resultado").innerHTML = "Resultado da operação: " + operacao;
+            }
+        } 
+       </script>
+    </head>
+    <body>
+        <div>Operadores Aritiméticos</div>
+        <p> primeiro numero: <input type="text" id="num1"></p>
+        <p> segundo numero: <input type="text" id="num2"></p>
+        <p>
+           <input type="button" id="adicao" value="Somar">
+           <input type="button" id="subtrair" value="Subtrair">
+           <input type="button" id="multiplicar" value="Multiplicar">
+           <input type="button" id="dividir" value="Dividir">
+        </p>
+        <p id="resultado">Resultado da operação: </p>
+         
+    </body>
+</html>

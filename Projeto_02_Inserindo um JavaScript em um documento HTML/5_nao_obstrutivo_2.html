@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- saved from url=(0093)file:///C:/Users/harle/AppData/Local/Temp/Temp1_Aula%202.zip/Aula%202/5_nao_obstrutivo_2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>TODO supply a title</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" async="async">
+ window.onload = function()
+            {
+                carrega_nome();
+                
+            document.getElementById('um').onclick = function()
+            {
+                informacao();
+            }
+           document.getElementById('dois').ondblclick = function()
+            {
+                informacao();
+             }
+  }
+            
+            function informacao()
+            {
+                var nome = prompt('Digite o seu nome:');
+                var idade =prompt('Digite o sua idade:');
+                alert(nome + '  ' + idade);
+            }  
+            function carrega_nome()
+            {
+                document.getElementById('nome').value = "H";
+            } 
+        </script>
+        
+       
+    </head>
+    <body>
+        <input type="button" id="um" value="um">
+        <br><br>
+        <input type="button" id="dois" value="dois">
+        <hr>
+        <input type="text" id="nome" value="Impacta">
+        
+        
+    
+</body></html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            var cores = new Array('vermelho','azul','verde','amarelo','roxo','pink');
+            
+            document.write(cores);
+            document.write("<br>");
+            document.write(typeof cores);
+            document.write("<br>");
+            document.write(cores.length);//5 
+            document.write("<br>");
+            document.write(cores[1]);
+            document.write("<hr>");
+            for(i=0;i<5;i++){
+                document.write(cores[i]);
+                document.write("<br>");
+            }
+            document.write("<hr>");
+            for(i=0;i< cores.length ;i++){
+                document.write(cores[i]);
+                document.write("<br>");
+            }
+            
+            var msg = '';
+            function le(elemento,ind,obj){
+                
+                msg += "cores["+ind+"]="+elemento+"\n"
+            }
+            cores.forEach(le);
+            alert(msg);
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

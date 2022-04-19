@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)file:///C:/Users/harle/AppData/Local/Temp/Temp1_Aula%209.zip/Aula%209/1_regexp/2_regexp.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>TODO supply a title</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <script>
+            //1ª maneira
+            var regexp1 = new RegExp("pre",'i');
+            var string1 = "H foi atendido na previa do filme" ;
+            //alert(regexp1.test(string1));
+           //alert(regexp1.exec(string1));//1ª ocorrencia
+           //2ª maneira - sintaxe literal
+            var regexp2 = /imp/i;
+           var string2 = "Amendoin peanut" ;
+           alert(string2.match(/Ro/ig));
+           var a = string2.match(/Ro/ig);
+           alert(a.length);
+           
+           alert(string2.replace(/r[a-z]/ig,'xy'));
+           
+        </script>
+    </head>
+    <body>
+       <p><input type="text" name="email" id="email"></p>
+    
+
+</body></html>

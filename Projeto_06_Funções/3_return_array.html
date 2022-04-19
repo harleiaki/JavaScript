@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+         function potencia(num,pot)
+         {
+
+                    var total = 1;
+                    for(i=1;i<=pot;i++){
+                        total = total *num;
+                    }
+
+                      return [total,num,pot];
+                      
+          }
+          
+          var resultado = potencia(2,3) ;
+          document.write(resultado);
+            document.write("<br>");
+          document.write(resultado[0]);//8
+            document.write("<br>");
+           document.write(resultado[1]);//2
+            document.write("<br>");
+            document.write(resultado[2]);//3
+            document.write("<br>");
+          //document.write(potencia(potencia(2,3),2));
+         
+        </script>
+        
+        
+    </head>
+    <body>
+        
+    </body>
+</html>

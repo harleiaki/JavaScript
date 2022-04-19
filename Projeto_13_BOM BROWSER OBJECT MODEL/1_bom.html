@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+        window.onload = function()
+        {
+            /*
+            document.write(window.navigator);
+            document.write("<br>");
+            document.write(window.navigator.platform);
+            document.write("<br>");
+            document.write(window.navigator.userAgent);
+             document.write("<br>");
+            document.write(window.navigator.language);
+            document.write("<br>");
+            document.write(window.navigator.plugins);
+            document.write("<br>");
+             document.write(window.navigator.plugins.length);
+            document.write("<br>");
+             document.write(window.navigator.plugins[1].name);
+            document.write("<br>");
+            
+            //tela
+             document.write(screen.width+" "+screen.height);
+             document.write("<br>");
+              document.write(outerWidth+" "+outerHeight);
+             document.write("<br>");
+             document.write(innerWidth+" "+innerHeight);
+             document.write("<br>");
+             */
+            
+            document.getElementById('botao').onclick = function()
+            {
+                //window.location.href="http://www.impacta.com.br";
+                //history.go(-1);
+                history.back();
+            }
+            var resposta = confirm("Você gostou do curso de JavaScript???");
+            alert(resposta);
+        }
+        </script>
+    </head>
+    <body>
+        <div id="conteudo">
+                <p>
+                  <input type="button" name="botao" id="botao" value="Botao">
+                </p>
+                <p>
+                  <input type="button" name="botao2" id="botao2" value="Botao2">
+                </p>
+       </div>
+    </body>
+</html>

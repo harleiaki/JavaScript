@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            table{
+                width: 50%;
+                border: 1px solid #000;
+            }
+            
+        </style>
+        <script>
+              
+                var cont = 1;//contadora
+                var  achei = false;//controladora
+                while(achei == false){
+                    if(cont % 17 == 0 && cont % 19 == 0){
+                            document.write(cont + ", ");
+                           // break;
+                           achei = true;
+                    }        
+                   cont++;
+                }
+                
+                document.write("<hr>");
+                //multiplos de 3 que estao entre 1 e 50
+                for(i=1;i<=50;i++){
+                    if(i % 3 == 0){
+                        document.write(i + ", ");
+                    }    
+                }
+               
+        </script>
+    </head>
+    <body>
+        <hr>
+    </body>
+</html>

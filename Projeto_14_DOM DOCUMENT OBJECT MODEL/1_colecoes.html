@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)file:///C:/Users/harle/AppData/Local/Temp/Temp1_Aula%2014.zip/Aula%2014/1_colecoes.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Untitled Document</title>
+<script>
+    window.onload = function(){
+           // var sexo = document.getElementById('radio');
+           // alert(sexo.type);
+           
+           //var sexo = document.getElementsByName('sexo');
+           //alert(sexo[0].id);
+           
+           //var classe = document.getElementsByClassName('teste');
+           //alert(classe[2].name);
+           //alert(classe[1].href);
+           //alert(classe[0].innerHTML);
+           
+           //var paragrafo = document.getElementsByTagName('p');
+           //alert(paragrafo[1].innerHTML)
+           
+           var sexo = document.querySelector("#radio");
+           alert(sexo.value);
+          
+    }
+</script>
+</head>
+
+<body>
+<div id="paragrafos">
+  <p class="teste">Primeiro Parágrafo</p>
+  <p>Segundo Paragrafo</p>
+  <p>Terceiro Paragrafo</p>
+</div>
+<div id="links">
+  <p><a class="teste" href="http://www.impacta.com.br/">Impacta</a></p>
+  <p><a href="http://www.impacta.edu.br/">FIT</a></p>
+  <p><a href="http://aluno.impactaonline.com.br/">Impacta on line</a></p>
+</div>
+<div id="inputs">Content for  id "inputs" Goes Here
+  <form id="form1" name="form1" method="post">
+    <p>
+      <label for="nome">Nome:</label>
+      <input class="teste" type="text" name="nome" id="nome">
+      <br>
+      <label for="idade">Idade:</label>
+      <input type="text" name="idade" id="idade">
+    </p>
+    <p>Sexo:
+      <input type="radio" name="sexo" id="radio" value="M">
+      <label for="masc">Masculino </label>
+      <input type="radio" name="sexo" id="radio2" value="F">
+      <label for="fem">Feminino </label>
+    </p>
+    <p>
+      <input type="button" name="botao" id="botao" value="Enviar">
+    </p>
+  </form>
+</div>
+
+
+</body></html>

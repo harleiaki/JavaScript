@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+                    window.onload = function(){
+                        document.getElementById('incrementa').onclick = function(){
+                            calcula(this.id)
+                        }
+                        document.getElementById('decrementa').onclick = function(){
+                            calcula(this.id)
+                        }
+                    }
+                    function calcula(objeto)
+                    {
+                        alert(objeto);
+                        var result = parseInt(document.getElementById('resultado').value);
+                        if(objeto == 'incrementa'){
+                            result ++;//resultado = resultado + 1
+                        }else{
+                            result --;//resultado = resultado - 1
+                        }
+                        document.getElementById('resultado').value = result;
+                    }
+                   
+
+	
+
+        </script>
+    </head>
+<body>
+<form>
+
+    <input type="button" name="decrementa" id="decrementa" value=" - " >
+    <input type="text" name="resultado" id="resultado" value="0" size="2">
+    <input type="button" name="incrementa" id="incrementa" value=" + " >
+</form>
+</body>
+</html>

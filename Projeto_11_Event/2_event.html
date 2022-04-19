@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function somenteNumeros(e)
+            {
+                var tecla = (window.event)?event.KeyCode:e.which;
+                if(tecla>47 && tecla < 58){
+                    return true;
+                }else{
+                    if(tecla == 8 || tecla == 0){
+                        return true;
+                    }else{
+                        return false;
+                    }   
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" name="numeros" id="numeros" onkeypress="return somenteNumeros(event) ">
+    </body>
+</html>
